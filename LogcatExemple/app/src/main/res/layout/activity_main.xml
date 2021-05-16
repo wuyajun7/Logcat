@@ -16,7 +16,7 @@
 
     <View
         android:layout_width="0dp"
-        android:layout_height="50dp" />
+        android:layout_height="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
 
     <View
         android:layout_width="0dp"
-        android:layout_height="50dp" />
+        android:layout_height="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,5 +36,47 @@
         android:background="#898989"
         android:onClick="printLog"
         android:padding="20dp"
-        android:text="print log" />
+        android:text="print test log" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#898989"
+            android:onClick="printLog1"
+            android:padding="20dp"
+            android:text="print log1" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#898989"
+            android:onClick="printLog2"
+            android:padding="20dp"
+            android:text="print log2" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#898989"
+            android:onClick="printLog3"
+            android:padding="20dp"
+            android:text="print log3" />
+    </LinearLayout>
 </LinearLayout>

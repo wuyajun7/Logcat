@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 10000; i++) {
-                    LogcatBus.getDefault().post(String.valueOf(System.currentTimeMillis()));
+                for (int i = 0; i < 100; i++) {
+                    LogcatBus.getDefault().post("测试日志输出"+String.valueOf(System.currentTimeMillis()));
                     try {
-                        Thread.sleep(200);
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -37,5 +37,17 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
 
+    }
+
+    public void printLog1(View view) {
+        LogcatBus.getDefault().post("测试日志输出Test_1");
+    }
+
+    public void printLog2(View view) {
+        LogcatBus.getDefault().post("测试日志输出Test_2");
+    }
+
+    public void printLog3(View view) {
+        LogcatBus.getDefault().post("测试日志输出Test_3");
     }
 }
