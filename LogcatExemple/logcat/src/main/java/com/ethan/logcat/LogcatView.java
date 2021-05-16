@@ -24,7 +24,7 @@ import java.util.List;
  */
 public class LogcatView extends FrameLayout {
 
-    private final String VERSION_INFO = "Android Logcat [版本 1.0.0.1]";
+    private final String VERSION_INFO = "Android Logcat [版本 1.1.0.1]";
 
     private WindowManager.LayoutParams mRootViewParams;
     private LogcatManager mWindowManager;
