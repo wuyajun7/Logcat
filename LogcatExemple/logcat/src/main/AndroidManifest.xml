@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ethan.logcat">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+        <provider
+            android:name="com.ethan.logcat.LogcatContentProvider"
+            android:authorities="${applicationId}.logcatProvider"
+            android:exported="false"
+            android:multiprocess="true" />
+        <!-- log 浮层 -->
+        <service android:name="com.ethan.logcat.LogcatService" />
+    </application>
+</manifest>
