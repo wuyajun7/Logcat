@@ -24,6 +24,7 @@ Step 2. Add the dependency
 
 ## 使用方式：
 
+```
 // 启动悬浮日志  
 LogcatBus.getDefault().startLogcat();  
 // 关闭悬浮日志  
@@ -35,4 +36,4 @@ LogcatBus.getDefault().post(log);
 LogcatView.setItemTouchListener  
 // 日志布局添加日志数据  
 LogcatView.addLogToView(log);  
-
+```
