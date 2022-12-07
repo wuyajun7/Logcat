@@ -21,17 +21,17 @@ public class LogcatBus {
     }
 
     public void startLogcat() {
-        Intent intent = new Intent(LogcatContentProvider.getApplicationContext(), LogcatService.class);
-        LogcatContentProvider.getApplicationContext().startService(intent);
+        Intent intent = new Intent(LogcatProvider.getAppContext(), LogcatService.class);
+        LogcatProvider.getAppContext().startService(intent);
     }
 
     public void overLogcat() {
-        Intent intent = new Intent(LogcatContentProvider.getApplicationContext(), LogcatService.class);
-        LogcatContentProvider.getApplicationContext().stopService(intent);
+        Intent intent = new Intent(LogcatProvider.getAppContext(), LogcatService.class);
+        LogcatProvider.getAppContext().stopService(intent);
     }
 
     public void post(String log) {
-        LogcatBroadcastManager.getInstance(LogcatContentProvider.getApplicationContext())
+        LogcatBroadcastManager.getInstance(LogcatProvider.getAppContext())
                 .sendBroadcast(LogcatBroadcastManager.BM_PRINT_LOG, log);
     }
 }

@@ -1,46 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.ethan.logcat.LogcatView
+        android:id="@+id/logcatView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#898989"
-        android:onClick="startLogcat"
-        android:padding="20dp"
-        android:text="start logcat" />
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_reflection"
+            android:gravity="center"
+            android:onClick="startLogcat"
+            android:text="start logcat"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_mist"
+            android:gravity="center"
+            android:onClick="overLogcat"
+            android:text="over logcat"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_reflection"
+            android:gravity="center"
+            android:onClick="printLog"
+            android:text="print test log"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </LinearLayout>
 
     <View
         android:layout_width="0dp"
-        android:layout_height="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#898989"
-        android:onClick="overLogcat"
-        android:padding="20dp"
-        android:text="over logcat" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#898989"
-        android:onClick="printLog"
-        android:padding="20dp"
-        android:text="print test log" />
-
-    <View
-        android:layout_width="0dp"
-        android:layout_height="20dp" />
+        android:layout_height="10dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,35 +69,41 @@
         android:gravity="center">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#898989"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_reflection"
+            android:gravity="center"
             android:onClick="printLog1"
-            android:padding="20dp"
-            android:text="print log1" />
+            android:text="print log1"
+            android:textColor="@color/white" />
 
         <View
-            android:layout_width="20dp"
+            android:layout_width="10dp"
             android:layout_height="0dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#898989"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_reflection"
+            android:gravity="center"
             android:onClick="printLog2"
-            android:padding="20dp"
-            android:text="print log2" />
+            android:text="print log2"
+            android:textColor="@color/white" />
 
         <View
-            android:layout_width="20dp"
+            android:layout_width="10dp"
             android:layout_height="0dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#898989"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/c_reflection"
+            android:gravity="center"
             android:onClick="printLog3"
-            android:padding="20dp"
-            android:text="print log3" />
+            android:text="print log3"
+            android:textColor="@color/white" />
     </LinearLayout>
 </LinearLayout>

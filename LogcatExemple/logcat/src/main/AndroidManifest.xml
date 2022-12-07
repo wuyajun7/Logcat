@@ -6,7 +6,7 @@
 
     <application>
         <provider
-            android:name="com.ethan.logcat.LogcatContentProvider"
+            android:name="com.ethan.logcat.LogcatProvider"
             android:authorities="${applicationId}.logcatProvider"
             android:exported="false"
             android:multiprocess="true" />

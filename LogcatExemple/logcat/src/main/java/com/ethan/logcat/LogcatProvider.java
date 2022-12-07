@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-public class LogcatContentProvider extends ContentProvider {
+public class LogcatProvider extends ContentProvider {
 
     private static Context context;
 
@@ -18,7 +18,7 @@ public class LogcatContentProvider extends ContentProvider {
         return false;
     }
 
-    public static Context getApplicationContext() {
+    public static Context getAppContext() {
         return context;
     }
 

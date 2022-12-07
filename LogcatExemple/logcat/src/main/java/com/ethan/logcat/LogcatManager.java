@@ -9,6 +9,8 @@ import android.view.WindowManager;
  */
 public class LogcatManager {
 
+    public static final String VERSION_INFO = "Android Logcat [版本 1.1.0.2]";
+
     private WindowManager mWindowManager;
     private static LogcatManager mInstance;
     private Context mContext;
